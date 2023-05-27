@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class TestData {
     String tariffs = "Тарифы",
-            buttonName = "Я участник, ищу мероприятие",
+            participantButton = "Я участник, ищу мероприятие",
             mainPageTitle = "Webinar Group — экосистема сервисов для всех видов",
             sidebarTitle = "Регистрация участника",
             blogPageDesc = "Про онлайн-технологии для бизнеса, работы и образования от компании Webinar Group",
