@@ -11,6 +11,7 @@ repositories {
 }
 
 def allureVersion = "2.21.0",
+    restAssuredVersion = "5.3.0",
     slf4jVersion = "2.0.7"
 
 allure {
@@ -33,14 +34,22 @@ compileTestJava {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.12.3",
+            "com.codeborne:selenide:6.12.2",
             'com.github.javafaker:javafaker:1.0.2',
             "org.junit.jupiter:junit-jupiter:5.9.2",
+            "io.appium:java-client:8.3.0",
+            "commons-io:commons-io:2.11.0",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.assertj:assertj-core:3.24.2",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.aeonbits.owner:owner:1.0.12",
+            'org.projectlombok:lombok:1.18.22'
     )
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 test {
@@ -48,6 +57,17 @@ test {
 }
 
 tasks.withType(Test) {
-    useJUnitPlatform()
     systemProperties(System.getProperties())
+}
+
+task ui_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("web")
+    }
+}
+
+task mobile_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("mobile")
+    }
 }
