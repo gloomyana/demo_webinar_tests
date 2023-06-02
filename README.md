@@ -9,7 +9,7 @@
 - [Test results report in Allure Report](#-test-results-report-in-allure-report)
 - [Allure TestOps integration](#-allure-testops-integration)
 - [Jira integration](#-jira-integration)
-- [BrowserStack App Automate](#-BrowserStack App Automate)
+- [BrowserStack App Automate](#-browserstack-app-automate)
 - [Telegram notifications](#-telegram-notifications)
 - [Sample test run in Selenoid](#-sample-test-run-in-selenoid)
 
@@ -112,6 +112,7 @@ To run web/mobile tests only:
 <img src="images/jenkins-build-parameters.jpg" alt="run web/mobile tests parameters" width="900">
 
 After the build is done the test results are available in `Allure Report` and `Allure TestOps` 
+
 <img src="images/jenkins-build.jpg" alt="Jenkins build page"> 
 
 [back to Contents ⬆](#contents)
