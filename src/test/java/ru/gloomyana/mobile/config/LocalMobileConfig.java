@@ -1,6 +1,7 @@
 package ru.gloomyana.mobile.config;
 
 import org.aeonbits.owner.Config;
+@LocalMobileConfig.LoadPolicy(LocalMobileConfig.LoadType.MERGE)
 @Config.Sources({
         "classpath:${envMobile}.properties"
 })
