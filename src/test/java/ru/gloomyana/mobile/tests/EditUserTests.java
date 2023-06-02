@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Epic("Mobile tests webinar.ru")
+@Epic("Mobile app tests webinar.ru")
 @Feature("User profile page")
 @Tag("mobile")
 @Owner("gloomyana")
