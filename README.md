@@ -9,6 +9,7 @@
 - [Test results report in Allure Report](#-test-results-report-in-allure-report)
 - [Allure TestOps integration](#-allure-testops-integration)
 - [Jira integration](#-jira-integration)
+- [BrowserStack App Automate](#-BrowserStack App Automate)
 - [Telegram notifications](#-telegram-notifications)
 - [Sample test run in Selenoid](#-sample-test-run-in-selenoid)
 
@@ -59,11 +60,11 @@ It has the following features:
 
 ## :arrow_forward: How to run
 ### Gradle build
-To run tests locally and in `Jenkins` the following gradle command is used:
+To run tests locally the following gradle command is used:
 ```bash
-$ gradle clean test -Dtag=<tag> -Denv=<env>
+$ gradle clean test -Denv=<env>
 ```
-`tag` - tests with this tag will be executed:
+`test` tasks with tags:
 - web
 - mobile
  
@@ -87,7 +88,18 @@ B --> E[local]
 C --> F[mobile-local]
 C --> G[mobile-remote]
 ```
-### Running tests in Jenkins
+### Running tests in [Jenkins](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/)
+To run tests in Jenkins the following command is used:
+```bash
+clean
+${TASK}
+"-Dbrowser=${BROWSER}"
+"-DbrowserVersion=${BROWSER_VERSION}"
+"-DbrowserSize=${BROWSER_SIZE}"
+"-DremoteUrl=${REMOTE_URL}"
+"-Denv=${ENV}"
+"-DenvMobile=${MOBILE_ENV}"
+```
 Main page of the build:
 
 <img src="images/jenkins-job.jpg" alt="Jenkins job main page">
@@ -99,19 +111,54 @@ The build of the project is parameterized, so before starting it, you need to ch
 To run web/mobile tests only:
 <img src="images/jenkins-build-parameters.jpg" alt="run web/mobile tests parameters" width="900">
 
-After the build is done the test results are available in `Allure Report` and `Allure TestOps`  
+After the build is done the test results are available in `Allure Report` and `Allure TestOps` 
+<img src="images/jenkins-build.jpg" alt="Jenkins build page"> 
+
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Allure Report" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg"> Test results report in Allure Report
-<img src="images/allure-result-main.jpg" alt="Allure Report main page">
+## <img width="3%" title="Allure Report" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/allure)
+### Overview page
+
+Overview page of Allure report contains the following parts:
+>- **ALLURE REPORT** displays date and time of the test, overall number of launched tests and chart showing the percentage and number of successful, fallen and broken tests
+>- **SUITES** displays groups of tests that share a common context such as a specific test environment or a particular test category
+>- **FEATURES** displays groups of tests according to Epic, Feature tags
+>- **TREND** displays trend of running tests for all runs
+>- **CATEGORIES** displays distribution of unsuccessful tests by defect types
+>- **EXECUTORS** displays information on test executors that were used to run the tests
+
+<img src="images/allure-result-main.jpg" alt="Allure Report Overview page">
+
+### Graphs page
+Graphs allow to see different statistics collected from the test data: statuses breakdown or severity and duration diagrams.
+
 <img src="images/allure-result-graphs.jpg" alt="Allure Report graphs">
+
+### Suites page
+On the **SUITES** tab a standard structural representation of the executed tests, grouped by suites and classes can be found.
+Each test case have information such as `severity`, `description`, `duration`, `test data` and execution `steps`.
+
 <img src="images/allure-result-test-example.jpg" alt="Allure Report suites">
 
+Also additional test artifacts are available:
+>- Last Screenshot
+>- Page Source
+>- Browser console logs
+>- Video
+
+<img src="images/allure-result-attachments.jpg" alt="Allure Report attachments">
+
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Allure TestOps" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_testops.svg"> Allure TestOps integration
+## <img width="3%" title="Allure TestOps" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_testops.svg"> [Allure TestOps](https://allure.autotests.cloud/project/2582/dashboards) integration
+
+### Dashboards
 <img src="images/allure-testops-dashboard.jpg" alt="Allure TestOps dashboards">
+
+### Test cases
 <img src="images/allure-testops-test-cases.jpg" alt="Allure TestOps test cases">
+
+<img src="images/allure-testops-test-cases-2.jpg" alt="Allure TestOps test cases">
 
 [back to Contents ⬆](#contents)
 
@@ -120,7 +167,18 @@ After the build is done the test results are available in `Allure Report` and `A
 
 [back to Contents ⬆](#contents)
 
+## <img width="3%" title="Browserstack" src="https://github.com/gloomyana/gloomyana/blob/main/icons/browserstack.svg"> BrowserStack App Automate
+BrowserStack Dashboard with an example of a mobile test result:
+<p align="center"><img src="images/browserstack-app-capabilities.jpg" alt="Browserstack app capabilities" width="625">
+ </p>
+ 
+<p align="center"><img src="images/browserstack-app-profiling.jpg" alt="Browserstack app profiling" width="625">
+ </p>
+ 
+[back to Contents ⬆](#contents)
+
 ## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Telegram notifications
+**Telegram bot** sends a report to a specified telegram chat by results of each project build.
 <p align="center"><img src="images/telegram-notifications.jpg" alt="Telegram notifications">
 </p>
 
