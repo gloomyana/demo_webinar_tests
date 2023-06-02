@@ -28,7 +28,7 @@ public class TestBase {
         Configuration.pageLoadTimeout = 30000;
         Configuration.browserSize = null;
 
-        if (envMobile.equals("browserstack")) {
+        if (envMobile.equals("mobile-remote")) {
             Configuration.browser = BrowserstackMobileDriver.class.getName();
         } else {
             Configuration.browser = LocalMobileDriver.class.getName();
@@ -45,7 +45,7 @@ public class TestBase {
     void afterEach() {
         String sessionId = Selenide.sessionId().toString();
         Attach.pageSource();
-        if ("browserstack".equals(envMobile)) {
+        if ("mobile-remote".equals(envMobile)) {
             Attach.addVideo(sessionId);
         }
         closeWebDriver();

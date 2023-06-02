@@ -60,7 +60,7 @@ tasks.withType(Test) {
     systemProperties(System.getProperties())
 }
 
-task ui_test(type: Test) {
+task web_test(type: Test) {
     useJUnitPlatform {
         includeTags("web")
     }
