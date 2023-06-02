@@ -16,7 +16,7 @@ public class EditUserTests extends TestBase {
 
     @Test
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Successful update user data")
+    @DisplayName("Successful user data update")
     void editUserData() {
         step("Successful user login", () -> {
             loginScreenPage.userLogin(testData.userEmail, testData.userPassword);
@@ -35,7 +35,7 @@ public class EditUserTests extends TestBase {
             userProfilePage.setPhoneNumber(testData.phoneNumber);
             userProfilePage.clickApproveChangeButton();
         });
-        step("Verify successful update user data", () -> {
+        step("Verify successful user data update", () -> {
             userProfilePage.successfulOpenEditProfilePage(testData.editUserPageTitle);
             userProfilePage.verifyFirstName(testData.firstName);
             userProfilePage.verifyLastName(testData.lastName);

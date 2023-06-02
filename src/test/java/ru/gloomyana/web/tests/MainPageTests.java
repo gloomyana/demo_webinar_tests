@@ -16,7 +16,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Severity(SeverityLevel.MINOR)
-    @DisplayName("Click on Webinar logo opens the main page")
+    @DisplayName("Click on Webinar logo opens main page")
     void clickLogoOpensMainPage() {
         step("Open main page", () -> {
             mainPage.openMainPage();

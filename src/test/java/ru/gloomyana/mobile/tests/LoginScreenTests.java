@@ -16,7 +16,7 @@ public class LoginScreenTests extends TestBase {
 
     @Test
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Check recover password button functionality")
+    @DisplayName("Check \"Forgot password\" button functionality")
     void checkForgotPasswordButton() {
         step("Open login page", () -> {
             loginScreenPage.clickLoginButton();
@@ -36,7 +36,7 @@ public class LoginScreenTests extends TestBase {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @DisplayName("Successful login with correct user's data")
+    @DisplayName("Successful user login")
     void successfulUserLogin() {
         step("Open log in page", () -> {
             loginScreenPage.clickLoginButton();
@@ -61,7 +61,7 @@ public class LoginScreenTests extends TestBase {
         step("Enter user profile", () -> {
             userProfilePage.clickOnUserAvatar();
         });
-        step("Click sign out button", () -> {
+        step("Click \"Sign out\" button", () -> {
             userProfilePage.clickSignOutButton();
         });
         step("Verify successful logout", () -> {

@@ -34,7 +34,7 @@ public class BlogPageTests extends TestBase {
 
     @Test
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Click on \"Try\" button opening of \"Sign Up\" page")
+    @DisplayName("Click \"Try\" button opens \"Sign Up\" page")
     void clickTryButtonOpensSignUpPage() {
         step("Open \"Blog\" page", () -> {
             blogPage.openBlogPage();
@@ -49,12 +49,12 @@ public class BlogPageTests extends TestBase {
 
     @MethodSource("ru.gloomyana.web.tests.TestData#blogMenuItems")
     @Severity(SeverityLevel.NORMAL)
-    @ParameterizedTest(name = "Menu item \"{0}\" enabled, visible and clickable")
+    @ParameterizedTest(name = "Menu item \"{0}\" is enabled, visible and clickable")
     void checkBlogMenuItemsClickable(String menuItem) {
         step("Open \"Blog\" page", () -> {
             blogPage.openBlogPage();
         });
-        step("Verify menu item enabled, visible and clickable", () -> {
+        step("Verify menu item is enabled, visible and clickable", () -> {
             blogPage.verifyMenuItemClickable(menuItem);
         });
     }
