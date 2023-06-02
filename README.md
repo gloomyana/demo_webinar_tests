@@ -169,25 +169,28 @@ Also additional test artifacts are available:
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Browserstack" src="https://github.com/gloomyana/gloomyana/blob/main/icons/browserstack.svg"> BrowserStack App Automate
+
 BrowserStack Dashboard with an example of a mobile test result:
-<p align="center"><img src="images/browserstack-app-capabilities.jpg" alt="Browserstack app capabilities" width="625">
+
+<p align="center"><img src="images/browserstack-app-profiling-full.jpg" alt="Browserstack app capabilities">
  </p>
- 
-<p align="center"><img src="images/browserstack-app-profiling.jpg" alt="Browserstack app profiling" width="625">
- </p>
- 
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Telegram notifications
+
 **Telegram bot** sends a report to a specified telegram chat by results of each project build.
+
 <p align="center"><img src="images/telegram-notifications.jpg" alt="Telegram notifications">
 </p>
 
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid
+
 <p align="center"><img src="images/web-test-video.gif" alt="web test video">
 </p>
+
 <p align="center"><img src="images/mobile-test-video.gif" alt="mobile test video">
 </p>
 
