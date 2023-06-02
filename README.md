@@ -1,5 +1,5 @@
 # Test automation project for [webinar.ru](https://webinar.ru/)
-<img title="Webinar" src=""></div>
+<img title="Webinar" src="images/webinar_top.jpg"></div>
 
 ##  <a name="contents">:page_facing_up: Сontents</a>
 - [Description](#paperclip-description)
@@ -40,17 +40,17 @@ It has the following features:
 
 ## :white_check_mark: Test cases
 **UI tests:**
-- [x] Successful opening of `Blog` page
-- [x] Click `Try` button opens `Sign Up` page
-- [x] `Blog page` menu items are enabled, visible and clickable *(parametrized)*
+- [x] Successful opening of **Blog** page
+- [x] Click **Try** button opens **Sign Up** page
+- [x] **Blog page** menu items are enabled, visible and clickable *(parametrized)*
 - [x] Click on logo reopens main page
 - [x] Click on participant button opens registration sidebar
 - [x] Check promo title of main page
-- [x] Successful opening of `Tariffs` page
+- [x] Successful opening of **Tariffs** page
 - [x] Webinar tariff type contains expected tariff options *(parametrized)*
 
 **Mobile app tests:**
-- [x] Check `Forgot` password button functionality
+- [x] Check **Forgot** password button functionality
 - [x] Successful user login
 - [x] Successful user logout
 - [x] Successful user data update
@@ -89,33 +89,47 @@ C --> G[mobile-remote]
 ```
 ### Running tests in Jenkins
 Main page of the build:
-<img src="" alt="Jenkins job main page">
 
-The build of the project is parameterized, so before starting it, you need to choose parameters.
-<img src="" alt="Jenkins build page">
+<img src="images/jenkins-job.jpg" alt="Jenkins job main page">
 
-To run web tests only:
-<img src="" alt="run web tests parameters">
+The build of the project is parameterized, so before starting it, you need to choose parameters:
 
-To run mobile tests only:
-<img src="" alt="run mobile tests parameters">
+<img src="images/jenkins-build-page.jpg" alt="Jenkins build page">
 
-After the build is done the test results are available in `Allure Report` and `Allure TestOps` 
+To run web/mobile tests only:
+<img src="images/jenkins-build-parameters.jpg" alt="run web/mobile tests parameters" width="900">
 
+After the build is done the test results are available in `Allure Report` and `Allure TestOps`  
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Allure Report" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg"> Test results report in Allure Report
-<img src="" alt="Allure Report main page">
+<img src="images/allure-result-main.jpg" alt="Allure Report main page">
+<img src="images/allure-result-graphs.jpg" alt="Allure Report graphs">
+<img src="images/allure-result-test-example.jpg" alt="Allure Report suites">
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Allure TestOps" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_testops.svg"> Allure TestOps integration
+<img src="images/allure-testops-dashboard.jpg" alt="Allure TestOps dashboards">
+<img src="images/allure-testops-test-cases.jpg" alt="Allure TestOps test cases">
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Jira" src="https://github.com/gloomyana/gloomyana/blob/main/icons/jira.svg"> Jira integration
+<img src="images/jira-integration.jpg" alt="Jira task">
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Telegram notifications
+<p align="center"><img src="images/telegram-notifications.jpg" alt="Telegram notifications">
+</p>
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid
+<p align="center"><img src="images/web-test-video.gif" alt="web test video">
+</p>
+<p align="center"><img src="images/mobile-test-video.gif" alt="mobile test video">
+</p>
+
 [back to Contents ⬆](#contents)
