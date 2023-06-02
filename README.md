@@ -9,7 +9,7 @@
 - [Test results report in Allure Report](#-test-results-report-in-allure-report)
 - [Allure TestOps integration](#-allure-testops-integration)
 - [Jira integration](#-jira-integration)
-- [BrowserStack App Automate](#-BrowserStack App Automate)
+- [BrowserStack App Automate](#-browserstack-app-automate)
 - [Telegram notifications](#-telegram-notifications)
 - [Sample test run in Selenoid](#-sample-test-run-in-selenoid)
 
@@ -112,6 +112,7 @@ To run web/mobile tests only:
 <img src="images/jenkins-build-parameters.jpg" alt="run web/mobile tests parameters" width="900">
 
 After the build is done the test results are available in `Allure Report` and `Allure TestOps` 
+
 <img src="images/jenkins-build.jpg" alt="Jenkins build page"> 
 
 [back to Contents ⬆](#contents)
@@ -168,25 +169,28 @@ Also additional test artifacts are available:
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Browserstack" src="https://github.com/gloomyana/gloomyana/blob/main/icons/browserstack.svg"> BrowserStack App Automate
+
 BrowserStack Dashboard with an example of a mobile test result:
-<p align="center"><img src="images/browserstack-app-capabilities.jpg" alt="Browserstack app capabilities" width="625">
+
+<p align="center"><img src="images/browserstack-app-profiling-full.jpg" alt="Browserstack app capabilities">
  </p>
- 
-<p align="center"><img src="images/browserstack-app-profiling.jpg" alt="Browserstack app profiling" width="625">
- </p>
- 
+
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Telegram notifications
+
 **Telegram bot** sends a report to a specified telegram chat by results of each project build.
+
 <p align="center"><img src="images/telegram-notifications.jpg" alt="Telegram notifications">
 </p>
 
 [back to Contents ⬆](#contents)
 
 ## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid
+
 <p align="center"><img src="images/web-test-video.gif" alt="web test video">
 </p>
+
 <p align="center"><img src="images/mobile-test-video.gif" alt="mobile test video">
 </p>
 
