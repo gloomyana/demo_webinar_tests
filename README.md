@@ -11,7 +11,7 @@
 - [Jira integration](#-jira-integration)
 - [BrowserStack App Automate](#-browserstack-app-automate)
 - [Telegram notifications](#-telegram-notifications)
-- [Sample test run in Selenoid](#-sample-test-run-in-selenoid)
+- [Sample test run in Selenoid and BrowserStack](#-sample-test-run-in-selenoid-and-browserstack)
 
 ## :paperclip: Description
 The project implements web and mobile (android) tests for website and app. \
@@ -186,7 +186,7 @@ BrowserStack Dashboard with an example of a mobile test result:
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid
+## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid and BrowserStack
 
 <p align="center"><img src="images/web-test-video.gif" alt="web test video">
 </p>
