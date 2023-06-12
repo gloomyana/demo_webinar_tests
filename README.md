@@ -54,7 +54,7 @@ It has the following features:
 - [x] Successful user login
 - [x] Successful user logout
 - [x] Successful user data update
-- [x] Check **Forgot** password button functionality
+- [x] Check Forgot password button functionality
 
 [back to Contents ⬆](#contents)
 
