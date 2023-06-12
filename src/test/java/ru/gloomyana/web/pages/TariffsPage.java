@@ -13,8 +13,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TariffsPage {
-    private final SelenideElement
-            tariffsPageTitle = $(".block-title.tariffs__title"),
+    private final SelenideElement tariffsPageTitle = $(".block-title.tariffs__title"),
             webinarTariffTypes = $(".tab-common__list");
 
     public TariffsPage openTariffsPage() {

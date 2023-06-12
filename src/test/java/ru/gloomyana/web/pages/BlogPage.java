@@ -9,8 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BlogPage {
 
-    private final SelenideElement
-            headerDesc = $(".header-desc"),
+    private final SelenideElement headerDesc = $(".header-desc"),
             headerButton = $(".header-cta"),
             signUpTitle = $(".signup-title"),
             blogMenu = $(".wb-menu");

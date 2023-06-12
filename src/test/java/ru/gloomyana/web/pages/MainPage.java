@@ -10,8 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
 
 public class MainPage {
-    private final SelenideElement
-            headerBottom = $(".header-bottom"),
+    private final SelenideElement headerBottom = $(".header-bottom"),
             logoLink = $(".logo__link"),
             headerBlogLink = $(".header-top__links-link", 0),
             promoButtons = $(".promo__controls-btn"),
