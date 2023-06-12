@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
@@ -19,7 +20,7 @@ public class MainPage {
             blockTitle = $(".block-title.right-panel__title");
 
     public MainPage openMainPage() {
-        open("https://webinar.ru/");
+        open(baseUrl);
         return this;
     }
 
@@ -45,7 +46,7 @@ public class MainPage {
     }
 
     public MainPage verifyPageUrl() {
-        webdriver().shouldHave(url("https://webinar.ru/"));
+        webdriver().shouldHave(url(baseUrl));
         return this;
     }
 

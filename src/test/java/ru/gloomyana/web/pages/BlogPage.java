@@ -16,7 +16,7 @@ public class BlogPage {
             blogMenu = $(".wb-menu");
 
     public BlogPage openBlogPage() {
-        open("https://webinar.ru/blog/");
+        open("blog/");
         return this;
     }
 

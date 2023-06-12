@@ -18,7 +18,7 @@ public class TariffsPage {
             webinarTariffTypes = $(".tab-common__list");
 
     public TariffsPage openTariffsPage() {
-        open("https://webinar.ru/tariffs/");
+        open("tariffs/");
         return this;
     }
 
