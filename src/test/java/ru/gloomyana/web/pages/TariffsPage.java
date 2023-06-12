@@ -38,5 +38,4 @@ public class TariffsPage {
         ElementsCollection filteredCollection = foundCollection.filter(visible);
         filteredCollection.shouldHave(texts(expectedTariffsOptions));
     }
-
 }

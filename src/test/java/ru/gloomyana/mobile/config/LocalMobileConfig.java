@@ -1,4 +1,5 @@
 package ru.gloomyana.mobile.config;
+
 import org.aeonbits.owner.Config;
 
 @Config.Sources({

@@ -59,5 +59,4 @@ public class MainPage {
         blockTitle.shouldHave(text(titleName));
         return this;
     }
-
 }

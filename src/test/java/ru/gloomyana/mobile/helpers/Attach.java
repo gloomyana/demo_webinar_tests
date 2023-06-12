@@ -1,22 +1,14 @@
 package ru.gloomyana.mobile.helpers;
 
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
 import org.aeonbits.owner.ConfigFactory;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.gloomyana.mobile.config.RemoteMobileConfig;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
-import static com.codeborne.selenide.Selenide.sessionId;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
-import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
 

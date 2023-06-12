@@ -1,6 +1,7 @@
 package ru.gloomyana.web.config;
 
 import org.aeonbits.owner.Config;
+
 @Config.Sources({
         "classpath:${env}.properties"
 })

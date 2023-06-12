@@ -26,6 +26,7 @@ public class LocalMobileDriver implements WebDriverProvider {
             throw new RuntimeException(e);
         }
     }
+
     @SneakyThrows
     @Nonnull
     @Override
