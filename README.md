@@ -14,16 +14,16 @@
 - [Sample test run in Selenoid and BrowserStack](#-sample-test-run-in-selenoid-and-browserstack)
 
 ## :paperclip: Description
-The project implements web and mobile (android) tests for website and app. \
+The project implements web and mobile (android) tests for website and mobile app. \
 It has the following features:
+
+- [x] Parametrized build
+- [x] Parametrized tests
+- [x] **Allure TestOps** and **Jira** integration
+- [x] Autotests as test documentation
 - [x] **Page Object** design pattern
 - [x] Using **Java Faker** for generating test data
-- [x] Parametrized tests
-- [x] Different configs using **Owner** for test running 
-- [x] Parametrized build
-- [x] **Allure TestOps** and **Jira** integration
-- [x] Lambda style **Steps**
-- [x] Autotests as test documentation
+- [x] Different configs using **Owner library** for test running
 
 ## :hammer_and_wrench: Tools and technologies
 <p  align="center"><a href="https://www.jetbrains.com/idea/"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/intellij_idea.svg" title="IntelliJ IDEA" alt="IntelliJ IDEA" width="50" height="50"/></a>
@@ -41,20 +41,20 @@ It has the following features:
 
 ## :white_check_mark: Test cases
 **UI tests:**
-- [x] Successful opening of **Blog** page
-- [x] Click **Try** button opens **Sign Up** page
-- [x] **Blog page** menu items are enabled, visible and clickable *(parametrized)*
 - [x] Click on logo reopens main page
 - [x] Click on participant button opens registration sidebar
 - [x] Check promo title of main page
+- [x] Successful opening of **Blog** page
+- [x] Click **Try** button opens **Sign Up** page
+- [x] **Blog page** menu items are enabled, visible and clickable *(parametrized)*
 - [x] Successful opening of **Tariffs** page
 - [x] Webinar tariff type contains expected tariff options *(parametrized)*
 
 **Mobile app tests:**
-- [x] Check **Forgot** password button functionality
 - [x] Successful user login
 - [x] Successful user logout
 - [x] Successful user data update
+- [x] Check **Forgot** password button functionality
 
 [back to Contents ⬆](#contents)
 
