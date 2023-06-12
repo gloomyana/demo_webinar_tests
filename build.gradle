@@ -38,7 +38,6 @@ dependencies {
             'com.github.javafaker:javafaker:1.0.2',
             "org.junit.jupiter:junit-jupiter:5.9.2",
             "io.appium:java-client:8.3.0",
-            "commons-io:commons-io:2.11.0",
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.assertj:assertj-core:3.24.2",
             "io.qameta.allure:allure-selenide:$allureVersion",
