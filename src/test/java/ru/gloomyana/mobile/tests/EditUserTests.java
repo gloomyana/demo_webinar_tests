@@ -1,9 +1,11 @@
 package ru.gloomyana.mobile.tests;
 
 import io.qameta.allure.*;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import ru.gloomyana.mobile.config.AuthConfig;
 
 import static io.qameta.allure.Allure.step;
 
@@ -13,13 +15,14 @@ import static io.qameta.allure.Allure.step;
 @Owner("gloomyana")
 
 public class EditUserTests extends TestBase {
+    AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
 
     @Test
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Successful user data update")
     void editUserData() {
         step("Successful user login", () -> {
-            loginScreenPage.userLogin(testData.userEmail, testData.userPassword);
+            loginScreenPage.userLogin(config.login(), config.password());
         });
         step("Enter user profile", () -> {
             userProfilePage.clickOnUserAvatar();
@@ -27,7 +30,8 @@ public class EditUserTests extends TestBase {
         step("Enter edit profile page", () -> {
             userProfilePage.successfulOpenEditProfilePage(testData.editUserPageTitle);
         });
-        step("Update user data", () -> {
+        step("Generate and update user data", () -> {
+            testData.GenerateUserData();
             userProfilePage.setFirstName(testData.firstName);
             userProfilePage.setLastName(testData.lastName);
             userProfilePage.setCompanyName(testData.companyName);

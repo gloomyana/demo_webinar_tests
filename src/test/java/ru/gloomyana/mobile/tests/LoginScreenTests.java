@@ -25,7 +25,8 @@ public class LoginScreenTests extends TestBase {
             loginScreenPage.clickForgotPasswordButton();
             loginScreenPage.verifyPasswordRecoveryPageTitle(testData.passwordRecoveryPageTitle);
         });
-        step("Enter user email address", () -> {
+        step("Generate and enter user email address", () -> {
+            testData.GenerateUserEmail();
             loginScreenPage.setUserEmail(testData.email);
             loginScreenPage.clickSendButton();
         });
@@ -42,8 +43,8 @@ public class LoginScreenTests extends TestBase {
             loginScreenPage.clickLoginButton();
         });
         step("Enter user email address and password", () -> {
-            loginScreenPage.setUserEmail(testData.userEmail);
-            loginScreenPage.setUserPassword(testData.userPassword);
+            loginScreenPage.setUserEmail(config.login());
+            loginScreenPage.setUserPassword(config.password());
             loginScreenPage.clickLoginButton();
         });
         step("Verify successful login", () -> {
@@ -56,7 +57,7 @@ public class LoginScreenTests extends TestBase {
     @DisplayName("Successful user logout")
     void successfulSignOut() {
         step("Successful user login", () -> {
-            loginScreenPage.userLogin(testData.userEmail, testData.userPassword);
+            loginScreenPage.userLogin(config.login(), config.password());
         });
         step("Enter user profile", () -> {
             userProfilePage.clickOnUserAvatar();
