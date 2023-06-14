@@ -29,6 +29,6 @@ public class TestData {
     }
 
     static Stream<String> getBlogMenuItems() {
-        return Stream.of(config.getMenuItems().toString().split(","));
+        return Stream.of(config.getMenuItems().split(","));
     }
 }
