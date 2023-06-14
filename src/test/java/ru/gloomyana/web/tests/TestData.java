@@ -1,30 +1,34 @@
 package ru.gloomyana.web.tests;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.params.provider.*;
+import ru.gloomyana.web.config.GetDataConfig;
 
 import java.util.List;
 import java.util.stream.Stream;
 
 public class TestData {
-    String tariffs = "Тарифы",
-            participantButton = "Я участник, ищу мероприятие",
-            mainPageTitle = "Webinar Group — экосистема сервисов для всех видов",
-            sidebarTitle = "Регистрация участника",
-            blogPageDesc = "Про онлайн-технологии для бизнеса, работы и образования от компании Webinar Group",
-            signUpPageTitle = "Регистрация в платформе Webinar";
+    static GetDataConfig config = ConfigFactory.create(GetDataConfig.class, System.getProperties());
 
-    static Stream<Arguments> TariffsOptionsForChosenType() {
+    String tariffs = config.getTariffs();
+    String participantButtonTitle = config.getParticipantButtonTitle();
+    String mainPageTitle = config.getMainPageTitle();
+    String sidebarTitle = config.getSidebarTitle();
+    String blogPageDesc = config.getBlogPageDesc();
+    String signUpPageTitle = config.getSignUpPageTitle();
+
+    static Stream<Arguments> getTariffsOptionsForChosenType() {
         return Stream.of(
-                Arguments.of("Для совещаний",
-                        List.of("Meetings Free", "Meetings Basic", "Meetings Pro", "Нужно больше?")),
-                Arguments.of("Для маркетинга",
-                        List.of("Meetings Free", "Optimum 300", "Pro 500", "Нужно больше?")),
-                Arguments.of("Для обучения",
-                        List.of("Meetings Free", "Optimum 30", "Pro 150", "Нужно больше?"))
+                Arguments.of(config.forMeetings(),
+                        List.of(config.meetingTariffOptions().split(","))),
+                Arguments.of(config.forMarketing(),
+                        List.of(config.marketingTariffOptions().split(","))),
+                Arguments.of(config.forLearning(),
+                        List.of(config.learningTariffOptions().split(",")))
         );
     }
 
-    static Stream<String> blogMenuItems() {
-        return Stream.of("Блог", "Кейсы", "Новости", "Инструкции", "Подборки", "Свежие");
+    static Stream<String> getBlogMenuItems() {
+        return Stream.of(config.getMenuItems().toString().split(","));
     }
 }

@@ -11,7 +11,6 @@ import static io.qameta.allure.Allure.step;
 @Feature("Main page")
 @Tag("web")
 @Owner("gloomyana")
-
 public class MainPageTests extends TestBase {
 
     @Test
@@ -37,7 +36,7 @@ public class MainPageTests extends TestBase {
             mainPage.openMainPage();
         });
         step("Click on participant button", () -> {
-            mainPage.clickPromoButton(testData.participantButton);
+            mainPage.clickPromoButton(testData.participantButtonTitle);
         });
         step("Verify that registration sidebar is opened", () -> {
             mainPage.verifyRegistrationSidebarIsOpen(testData.sidebarTitle);

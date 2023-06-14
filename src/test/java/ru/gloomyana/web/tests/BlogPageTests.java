@@ -14,7 +14,6 @@ import static io.qameta.allure.Allure.step;
 @Feature("Blog page")
 @Tag("web")
 @Owner("gloomyana")
-
 public class BlogPageTests extends TestBase {
 
     @Test
@@ -47,7 +46,7 @@ public class BlogPageTests extends TestBase {
         });
     }
 
-    @MethodSource("ru.gloomyana.web.tests.TestData#blogMenuItems")
+    @MethodSource("ru.gloomyana.web.tests.TestData#getBlogMenuItems")
     @Severity(SeverityLevel.NORMAL)
     @ParameterizedTest(name = "Menu item \"{0}\" is enabled, visible and clickable")
     void checkBlogMenuItemsClickable(String menuItem) {

@@ -5,7 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
@@ -34,7 +33,7 @@ public class TariffsPageTests extends TestBase {
         });
     }
 
-    @MethodSource("ru.gloomyana.web.tests.TestData#TariffsOptionsForChosenType")
+    @MethodSource("ru.gloomyana.web.tests.TestData#getTariffsOptionsForChosenType")
     @Severity(SeverityLevel.NORMAL)
     @ParameterizedTest(name = "Webinar \"{0}\" contains the following tariff options {1}")
     void checkWebinarTariffs(String type, List<String> expectedTariffs) {
