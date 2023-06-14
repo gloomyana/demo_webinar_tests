@@ -23,7 +23,7 @@ public class LoginScreenTests extends TestBase {
         });
         step("Open password recovery page", () -> {
             loginScreenPage.clickForgotPasswordButton();
-            loginScreenPage.verifyPasswordRecoveryPageTitle(testData.passwordRecoveryPageTitle);
+            loginScreenPage.verifyPasswordRecoveryPageTitle(testData.config.passwordRecoveryPageTitle());
         });
         step("Generate and enter user email address", () -> {
             testData.GenerateUserEmail();
@@ -31,7 +31,7 @@ public class LoginScreenTests extends TestBase {
             loginScreenPage.clickSendButton();
         });
         step("Verify that page title has information about sending instructions", () -> {
-            loginScreenPage.verifyEmailSentPageTitle(testData.emailSentPageTitle);
+            loginScreenPage.verifyEmailSentPageTitle(testData.config.emailSentPageTitle());
         });
     }
 
@@ -48,7 +48,7 @@ public class LoginScreenTests extends TestBase {
             loginScreenPage.clickLoginButton();
         });
         step("Verify successful login", () -> {
-            userProfilePage.verifyEmptyEventPageTitle(testData.eventPageTitle);
+            userProfilePage.verifyEmptyEventPageTitle(testData.config.eventPageTitle());
         });
     }
 
@@ -66,7 +66,7 @@ public class LoginScreenTests extends TestBase {
             userProfilePage.clickSignOutButton();
         });
         step("Verify successful logout", () -> {
-            loginScreenPage.verifyLoginScreenPageTitle(testData.loginPageTitle);
+            loginScreenPage.verifyLoginScreenPageTitle(testData.config.loginPageTitle());
         });
     }
 }

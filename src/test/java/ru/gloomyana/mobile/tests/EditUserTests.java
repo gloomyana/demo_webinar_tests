@@ -28,7 +28,7 @@ public class EditUserTests extends TestBase {
             userProfilePage.clickOnUserAvatar();
         });
         step("Enter edit profile page", () -> {
-            userProfilePage.successfulOpenEditProfilePage(testData.editUserPageTitle);
+            userProfilePage.successfulOpenEditProfilePage(testData.config.editUserPageTitle());
         });
         step("Generate and update user data", () -> {
             testData.GenerateUserData();
@@ -40,7 +40,7 @@ public class EditUserTests extends TestBase {
             userProfilePage.clickApproveChangeButton();
         });
         step("Verify successful user data update", () -> {
-            userProfilePage.successfulOpenEditProfilePage(testData.editUserPageTitle);
+            userProfilePage.successfulOpenEditProfilePage(testData.config.editUserPageTitle());
             userProfilePage.verifyFirstName(testData.firstName);
             userProfilePage.verifyLastName(testData.lastName);
             userProfilePage.verifyCompanyName(testData.companyName);
