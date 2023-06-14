@@ -60,60 +60,61 @@ It has the following features:
 
 ## :arrow_forward: How to run
 ### Gradle build
-To run tests locally the following gradle command is used:
+There are two types of tasks for `tests`:
+>- web_test
+>- mobile_test
+
+#### To run web tests locally:
 ```bash
-$ gradle clean test -Denv=<env>
+$ gradle clean web_test -Denv='local'
 ```
-`test` tasks with tags:
-- web
-- mobile
- 
-`env`, `envMobile`  - defines an environment for running these tests:
-- local
-- remote
-- mobile_local
-- mobile_remote
+Additional parameters: `-Dbrowser=` `DbrowserVersion=` `DbrowserSize=` - set parameters for the browser
 
-Additional parameters:
-- `-Dbrowser=` `DbrowserVersion=` `DbrowserSize=` - set parameters for the browser
-- `-DremoteUrl=` - set url for remote webdriver
-
-Valid combinations:
+#### To run mobile tests locally:
+```bash
+$ gradle clean mobile_test -DenvMobile='mobile-local'
+```
+Valid combinations of gradle command:
 ```mermaid
 graph LR
-A[test type] --> B[web]
-A --> C[mobile]
-B --> D[remote]
-B --> E[local]
-C --> F[mobile-local]
-C --> G[mobile-remote]
+A[tests tasks] --> B[web_test]
+A --> C[mobile_test]
+B --> D[-Denv=remote]
+B --> E[-Denv=local]
+C --> F[-Denv=mobile-local]
+C --> G[-Denv=mobile-remote]
 ```
+
 ### Running tests in [Jenkins](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/)
-To run tests in Jenkins the following command is used:
-```bash
-clean
-${TASK}
-"-Dbrowser=${BROWSER}"
-"-DbrowserVersion=${BROWSER_VERSION}"
-"-DbrowserSize=${BROWSER_SIZE}"
-"-DremoteUrl=${REMOTE_URL}"
-"-Denv=${ENV}"
-"-DenvMobile=${MOBILE_ENV}"
-```
 Main page of the build:
 
 <img src="images/jenkins-job.jpg" alt="Jenkins job main page">
 
-The build of the project is parameterized, so before starting it, you need to choose parameters:
+The build of the project is parameterized, so before starting it, you need to choose parameters. \
+To run **all types of tests**, you must select the following options:
+
+>- **REMOTE_URL:** `https://selenoid.autotests.cloud/wd/hub`
+>- **ENV:** `remote`
+>- **MOBILE_ENV:** `mobile-remote`
+>- **TASK:** `test`
 
 <img src="images/jenkins-build-page.jpg" alt="Jenkins build page">
 
-To run web/mobile tests only:
-<img src="images/jenkins-build-parameters.jpg" alt="run web/mobile tests parameters" width="900">
+#### To run web tests only:
 
-After the build is done the test results are available in `Allure Report` and `Allure TestOps` 
+>- **REMOTE_URL:** `https://selenoid.autotests.cloud/wd/hub`
+>- **ENV:** `remote`
+>- **TASK:** `web_test`
 
-<img src="images/jenkins-build.jpg" alt="Jenkins build page"> 
+<img src="images/jenkins-web-build-parameters.jpg" alt="run web tests parameters" width="900">
+
+#### To run mobile tests only:
+
+>- **REMOTE_URL:** `http://hub.browserstack.com/wd/hub`
+>- **MOBILE_ENV:** `mobile-remote`
+>- **TASK:** `mobile_test`
+
+<img src="images/jenkins-mobile-build-parameters.jpg" alt="run mobile tests parameters" width="900">
 
 [back to Contents ⬆](#contents)
 
