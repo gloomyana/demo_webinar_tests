@@ -8,17 +8,17 @@ import org.aeonbits.owner.Config;
 
 public interface GetDataConfig extends Config {
     @Key("passwordRecoveryPageTitle")
-    String passwordRecoveryPageTitle();
+    String getPasswordRecoveryPageTitle();
 
     @Key("emailSentPageTitle")
-    String emailSentPageTitle();
+    String getEmailSentPageTitle();
 
     @Key("eventPageTitle")
-    String eventPageTitle();
+    String getEventPageTitle();
 
     @Key("loginPageTitle")
-    String loginPageTitle();
+    String getLoginPageTitle();
 
     @Key("editUserPageTitle")
-    String editUserPageTitle();
+    String getEditUserPageTitle();
 }
