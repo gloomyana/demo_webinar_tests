@@ -81,17 +81,18 @@ A[tests tasks] --> B[web_test]
 A --> C[mobile_test]
 B --> D[-Denv=remote]
 B --> E[-Denv=local]
-C --> F[-Denv=mobile-local]
-C --> G[-Denv=mobile-remote]
+C --> F[-DenvMobile=mobile-local]
+C --> G[-DenvMobile=mobile-remote]
 ```
 
-### Running tests in [Jenkins](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/)
+### Running tests in [Jenkins](https://jenkins.autotests.cloud/job/Students/job/gloomyana_webinar_tests/)
 Main page of the build:
 
 <img src="images/jenkins-job.jpg" alt="Jenkins job main page">
 
-The build of the project is parameterized, so before starting it, you need to choose parameters. \
-To run **all types of tests**, you must select the following options:
+The build of the project is parameterized, so before starting it, you need to choose parameters.
+
+#### To run all types of tests, you must select the following options:
 
 >- **REMOTE_URL:** `https://selenoid.autotests.cloud/wd/hub`
 >- **ENV:** `remote`
@@ -106,7 +107,7 @@ To run **all types of tests**, you must select the following options:
 >- **ENV:** `remote`
 >- **TASK:** `web_test`
 
-<img src="images/jenkins-web-build-parameters.jpg" alt="run web tests parameters" width="900">
+<img src="images/jenkins-web-build-parameters.jpg" alt="run web tests parameters">
 
 #### To run mobile tests only:
 
@@ -114,11 +115,11 @@ To run **all types of tests**, you must select the following options:
 >- **MOBILE_ENV:** `mobile-remote`
 >- **TASK:** `mobile_test`
 
-<img src="images/jenkins-mobile-build-parameters.jpg" alt="run mobile tests parameters" width="900">
+<img src="images/jenkins-mobile-build-parameters.jpg" alt="run mobile tests parameters">
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Allure Report" src="images/icons/allure_report.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/allure)
+## <img width="3%" title="Allure Report" src="images/icons/allure_report.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/Students/job/gloomyana_webinar_tests/allure/)
 ### Overview page
 
 Overview page of Allure report contains the following parts:
