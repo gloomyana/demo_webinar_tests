@@ -26,18 +26,18 @@ It has the following features:
 - [x] Different configs using **Owner library** for test running
 
 ## :hammer_and_wrench: Tools and technologies
-<p  align="center"><a href="https://www.jetbrains.com/idea/"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/intellij_idea.svg" title="IntelliJ IDEA" alt="IntelliJ IDEA" width="50" height="50"/></a>
-<a href="https://www.java.com"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/java.svg" title="Java" alt="Java" width="50" height="50"/></a>
-<a href="https://selenide.org"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenide.svg" title="Selenide" alt="Selenide" width="50" height="50"/></a>
-<a href="https://junit.org/junit5"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/junit5.svg" title="JUnit5" alt="JUnit5" width="50" height="50"/></a>
-<a href="https://gradle.org"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/gradle.svg" title="Gradle" alt="Gradle" width="50" height="50"/></a>
-<a href="https://www.jenkins.io"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/jenkins.svg" title="Jenkins" alt="Jenkins" width="50" height="50"/></a>
-<a href="https://qameta.io/allure-report"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg" title="Allure Report" alt="Allure Report" width="50" height="50"/></a>
-<a href="https://qameta.io"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_testops.svg" title="Allure Testops" alt="REST Assured" width="50" height="50"/></a>
-<a href="https://web.telegram.org/"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg" title="Telegram" alt="Telegram" width="50" height="50"/></a> 
-<a href="https://www.atlassian.com/software/jira"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/jira.svg" title="Jira" alt="Jira" width="50" height="50"/></a> 
-<a href="https://aerokube.com/selenoid/latest/"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg" title="Selenoid" alt="Selenoid" width="50" height="50"/></a>
-<a href="https://www.browserstack.com/automate"><img src="https://github.com/gloomyana/gloomyana/blob/main/icons/browserstack.svg" title="Browserstack" alt="Browserstack" width="50" height="50"/></a></p>
+<p  align="center"><a href="https://www.jetbrains.com/idea/"><img src="images/icons/intellij_idea.svg" title="IntelliJ IDEA" alt="IntelliJ IDEA" width="50" height="50"/></a>
+<a href="https://www.java.com"><img src="images/icons/java.svg" title="Java" alt="Java" width="50" height="50"/></a>
+<a href="https://selenide.org"><img src="images/icons/selenide.svg" title="Selenide" alt="Selenide" width="50" height="50"/></a>
+<a href="https://junit.org/junit5"><img src="images/icons/junit5.svg" title="JUnit5" alt="JUnit5" width="50" height="50"/></a>
+<a href="https://gradle.org"><img src="images/icons/gradle.svg" title="Gradle" alt="Gradle" width="50" height="50"/></a>
+<a href="https://www.jenkins.io"><img src="images/icons/jenkins.svg" title="Jenkins" alt="Jenkins" width="50" height="50"/></a>
+<a href="https://qameta.io/allure-report"><img src="images/icons/allure_report.svg" title="Allure Report" alt="Allure Report" width="50" height="50"/></a>
+<a href="https://qameta.io"><img src="images/icons/allure_testops.svg" title="Allure Testops" alt="REST Assured" width="50" height="50"/></a>
+<a href="https://web.telegram.org/"><img src="images/icons/telegram.svg" title="Telegram" alt="Telegram" width="50" height="50"/></a> 
+<a href="https://www.atlassian.com/software/jira"><img src="images/icons/jira.svg" title="Jira" alt="Jira" width="50" height="50"/></a> 
+<a href="https://aerokube.com/selenoid/latest/"><img src="images/icons/selenoid.svg" title="Selenoid" alt="Selenoid" width="50" height="50"/></a>
+<a href="https://www.browserstack.com/automate"><img src="images/icons/browserstack.svg" title="Browserstack" alt="Browserstack" width="50" height="50"/></a></p>
 
 ## :white_check_mark: Test cases
 **UI tests:**
@@ -117,7 +117,7 @@ After the build is done the test results are available in `Allure Report` and `A
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Allure Report" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_report.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/allure)
+## <img width="3%" title="Allure Report" src="images/icons/allure_report.svg"> Test results report in [Allure Report](https://jenkins.autotests.cloud/job/gloomyana_webinar_tests/allure)
 ### Overview page
 
 Overview page of Allure report contains the following parts:
@@ -151,7 +151,7 @@ Also additional test artifacts are available:
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Allure TestOps" src="https://github.com/gloomyana/gloomyana/blob/main/icons/allure_testops.svg"> [Allure TestOps](https://allure.autotests.cloud/project/2582/dashboards) integration
+## <img width="3%" title="Allure TestOps" src="images/icons/allure_testops.svg"> [Allure TestOps](https://allure.autotests.cloud/project/2582/dashboards) integration
 
 ### Dashboards
 <img src="images/allure-testops-dashboard.jpg" alt="Allure TestOps dashboards">
@@ -163,12 +163,12 @@ Also additional test artifacts are available:
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Jira" src="https://github.com/gloomyana/gloomyana/blob/main/icons/jira.svg"> Jira integration
+## <img width="3%" title="Jira" src="images/icons/jira.svg"> Jira integration
 <img src="images/jira-integration.jpg" alt="Jira task">
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Browserstack" src="https://github.com/gloomyana/gloomyana/blob/main/icons/browserstack.svg"> BrowserStack App Automate
+## <img width="3%" title="Browserstack" src="images/icons/browserstack.svg"> BrowserStack App Automate
 
 BrowserStack Dashboard with an example of a mobile test result:
 
@@ -177,7 +177,7 @@ BrowserStack Dashboard with an example of a mobile test result:
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Telegram" src="https://github.com/gloomyana/gloomyana/blob/main/icons/telegram.svg"> Telegram notifications
+## <img width="3%" title="Telegram" src="images/icons/telegram.svg"> Telegram notifications
 
 **Telegram bot** sends a report to a specified telegram chat by results of each project build.
 
@@ -186,7 +186,7 @@ BrowserStack Dashboard with an example of a mobile test result:
 
 [back to Contents ⬆](#contents)
 
-## <img width="3%" title="Selenoid" src="https://github.com/gloomyana/gloomyana/blob/main/icons/selenoid.svg"> Sample test run in Selenoid and BrowserStack
+## <img width="3%" title="Selenoid" src="images/icons/selenoid.svg"> Sample test run in Selenoid and BrowserStack
 
 <p align="center"><img src="images/web-test-video.gif" alt="web test video">
 </p>

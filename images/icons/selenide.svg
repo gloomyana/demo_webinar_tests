@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="67.7334mm" height="67.7334mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5038.32 5038.32"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:whitesmoke}
+    .fil2 {fill:url(#id0)}
+    .fil6 {fill:url(#id1)}
+    .fil4 {fill:url(#id2)}
+    .fil8 {fill:url(#id3)}
+    .fil3 {fill:url(#id4)}
+    .fil9 {fill:url(#id5)}
+    .fil5 {fill:url(#id6)}
+    .fil7 {fill:url(#id7)}
+    .fil1 {fill:url(#id8)}
+   ]]>
+  </style>
+  <radialGradient id="id0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.999999 -0 -0 0.975609 0 33)" cx="1802.66" cy="1365.63" r="806.92" fx="1802.66" fy="1365.63">
+   <stop offset="0" style="stop-opacity:1; stop-color:#FFB500"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FF7700"/>
+  </radialGradient>
+  <radialGradient id="id1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.999997 -0 -0 0.975604 0 43)" cx="3486.2" cy="1749.42" r="806.92" fx="3486.2" fy="1749.42">
+   <stop offset="0" style="stop-opacity:1; stop-color:#24BDFF"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#0088FF"/>
+  </radialGradient>
+  <radialGradient id="id2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.999995 -0 -0 0.975597 0 83)" cx="2502.53" cy="3387.74" r="806.92" fx="2502.53" fy="3387.74">
+   <stop offset="0" style="stop-opacity:1; stop-color:#B700B7"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#7B007B"/>
+  </radialGradient>
+  <radialGradient id="id3" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.1767 -1.54009 1.17671 1.54009 -2971 5169)" cx="4029.32" cy="1919.55" r="405.47" fx="4029.32" fy="1919.55">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.290196" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.360784" style="stop-opacity:1; stop-color:#E5E5E5"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#CCCCCC"/>
+  </radialGradient>
+  <radialGradient id="id4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.45877 -1.21411 1.45878 1.21413 -7478 2329)" xlink:href="#id3" cx="2673.69" cy="4285.61" r="590.58" fx="2673.69" fy="4285.61">
+  </radialGradient>
+  <radialGradient id="id5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.15164 -1.54011 1.15164 1.54011 -4198 549)" xlink:href="#id3" cx="1562.68" cy="3439.63" r="674.13" fx="1562.68" fy="3439.63">
+  </radialGradient>
+  <radialGradient id="id6" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.45874 -1.21059 1.45874 1.21059 -3390 4229)" xlink:href="#id3" cx="3695.78" cy="1161.74" r="348.25" fx="3695.78" fy="1161.74">
+  </radialGradient>
+  <radialGradient id="id7" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-0.851737 1.69741 -1.70912 -0.827965 5139 -2274)" xlink:href="#id3" cx="2112.66" cy="717.8" r="537.92" fx="2112.66" fy="717.8">
+  </radialGradient>
+  <radialGradient id="id8" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.14027 -1.54007 1.14028 1.54009 -1365 913)" xlink:href="#id3" cx="970.62" cy="1077.42" r="497.56" fx="970.62" fy="1077.42">
+  </radialGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1180.86 0l2676.61 0c652.06,0 1180.86,528.8 1180.86,1180.86l0 2676.61c0,652.05 -528.8,1180.85 -1180.86,1180.85l-2676.61 0.01c-652.05,-0.01 -1180.85,-528.81 -1180.85,-1180.86l-0.01 -2676.6c0.01,-652.06 528.81,-1180.86 1180.86,-1180.86z"/>
+  <g id="_2379462241616">
+   <path id="path3801" class="fil1" d="M669.41 987.01c-97.88,245.71 28.85,556.66 267.64,682.46 111.22,37.47 286.19,-139.27 394.55,-400.64 108.53,-261.79 109.78,-510.88 4.17,-562.56 -0.04,-0.01 -0.07,-0.04 -0.11,-0.04 -237.06,-73.57 -525.19,4.19 -643.92,232.11 -8.35,16.02 -15.78,32.25 -22.32,48.68l0 0z"/>
+   <ellipse class="fil2" cx="1802.66" cy="1365.62" rx="920.14" ry="897.69"/>
+   <path id="path3801_0" class="fil3" d="M2898.59 4822.69c295.5,-83.32 492.52,-419.64 439.84,-728.47 -44.01,-128.95 -354.67,-240.11 -680.69,-145.95 -395.36,115.27 -515.27,324.88 -488.31,458.67 0.01,0.05 0.01,0.1 0.04,0.14 99.59,270.36 374.69,480.94 668.52,429.41 20.66,-3.62 40.85,-8.23 60.61,-13.81l0 0z"/>
+   <ellipse class="fil4" cx="2502.53" cy="3387.74" rx="1102.14" ry="1075.26"/>
+   <path id="path3801_1" class="fil5" d="M3880.65 967.41c-171.59,-70.47 -390.6,16.09 -480.61,182.61 -27.11,77.72 95.54,201.75 278.03,279.69 182.79,78.07 357.46,80.8 394.49,7.12 0.01,-0.03 0.03,-0.06 0.04,-0.08 53.36,-165.7 0.97,-368.34 -157.98,-453.31 -11.18,-5.97 -22.5,-11.31 -33.97,-16.01l0 0z"/>
+   <ellipse class="fil6" cx="3486.2" cy="1749.42" rx="693.7" ry="676.78"/>
+   <path id="path3801_2" class="fil7" d="M2200.06 225.72c-266.82,-99.49 -598.51,44.36 -728.22,304.38 -37.68,120.61 156.74,304.74 440.68,415.13 284.39,110.58 552.55,105.98 605.65,-8.93 0.01,-0.05 0.04,-0.09 0.04,-0.13 73.53,-256.92 -17.05,-565.23 -265.22,-687.59 -17.44,-8.61 -35.09,-16.22 -52.93,-22.87l0 0z"/>
+   <path id="path3801_3" class="fil8" d="M4365.53 2175.47c92.34,-197.51 2.97,-459.5 -187.5,-574.51 -89.74,-36.18 -242.23,100.88 -343.95,310.79 -101.89,210.24 -114.87,415.18 -30.44,462.78 0.03,0.01 0.06,0.03 0.09,0.04 191.56,71.93 432.43,21.77 541.09,-160.11 7.65,-12.79 14.53,-25.78 20.71,-38.99l0 0z"/>
+   <path id="path3801_4" class="fil9" d="M1130.46 3739.69c96.7,337.1 481.89,560.4 834.36,498.61 147.05,-50.94 272.42,-406.36 163.18,-778.27 -133.72,-450.99 -373.77,-586.86 -526.45,-555.38 -0.05,0.02 -0.11,0.02 -0.16,0.04 -308.29,115.16 -547.4,430.48 -487.02,765.84 4.25,23.57 9.62,46.61 16.08,69.15l0 0z"/>
+  </g>
+ </g>
+</svg>
