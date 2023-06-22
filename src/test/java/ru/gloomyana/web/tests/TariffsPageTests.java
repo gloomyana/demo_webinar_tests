@@ -26,10 +26,10 @@ public class TariffsPageTests extends TestBase {
             mainPage.openMainPage();
         });
         step("Going to \"Tariffs\" page using header menu", () -> {
-            mainPage.clickOnHeaderMenu(testData.tariffs);
+            mainPage.clickOnHeaderMenu(config.getTariffs());
         });
         step("Verify successful opening of \"Tariffs\" page", () -> {
-            tariffsPage.verifyTariffsPageOpen(testData.tariffs);
+            tariffsPage.verifyTariffsPageOpen(config.getTariffs());
         });
     }
 

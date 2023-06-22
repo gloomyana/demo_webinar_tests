@@ -10,13 +10,6 @@ import java.util.stream.Stream;
 public class TestData {
     static GetDataConfig config = ConfigFactory.create(GetDataConfig.class, System.getProperties());
 
-    String tariffs = config.getTariffs();
-    String participantButtonTitle = config.getParticipantButtonTitle();
-    String mainPageTitle = config.getMainPageTitle();
-    String sidebarTitle = config.getSidebarTitle();
-    String blogPageDesc = config.getBlogPageDesc();
-    String signUpPageTitle = config.getSignUpPageTitle();
-
     static Stream<Arguments> getTariffsOptionsForChosenType() {
         return Stream.of(
                 Arguments.of(config.forMeetings(),

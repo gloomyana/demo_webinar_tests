@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import ru.gloomyana.web.config.GetDataConfig;
 import ru.gloomyana.web.config.WebDriverConfig;
 
 import ru.gloomyana.web.helpers.Attach;
@@ -24,6 +25,7 @@ public class TestBase {
     TestData testData = new TestData();
 
     static WebDriverConfig webDriverConfig = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+    GetDataConfig config = ConfigFactory.create(GetDataConfig.class, System.getProperties());
 
     @BeforeAll
     static void beforeAll() {

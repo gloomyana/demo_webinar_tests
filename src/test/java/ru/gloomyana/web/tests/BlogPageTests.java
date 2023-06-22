@@ -27,7 +27,7 @@ public class BlogPageTests extends TestBase {
             mainPage.openBlogPage();
         });
         step("Verify successful opening of \"Blog\" page", () -> {
-            blogPage.verifyBlogPageOpen(testData.blogPageDesc);
+            blogPage.verifyBlogPageOpen(config.getBlogPageDesc());
         });
     }
 
@@ -42,7 +42,7 @@ public class BlogPageTests extends TestBase {
             blogPage.clickHeaderTryButton();
         });
         step("Verify successful opening of \"Sign Up\" page", () -> {
-            blogPage.verifySignUpPageTitle(testData.signUpPageTitle);
+            blogPage.verifySignUpPageTitle(config.getSignUpPageTitle());
         });
     }
 

@@ -36,10 +36,10 @@ public class MainPageTests extends TestBase {
             mainPage.openMainPage();
         });
         step("Click on participant button", () -> {
-            mainPage.clickPromoButton(testData.participantButtonTitle);
+            mainPage.clickPromoButton(config.getParticipantButtonTitle());
         });
         step("Verify that registration sidebar is opened", () -> {
-            mainPage.verifyRegistrationSidebarIsOpen(testData.sidebarTitle);
+            mainPage.verifyRegistrationSidebarIsOpen(config.getSidebarTitle());
         });
     }
 
@@ -51,7 +51,7 @@ public class MainPageTests extends TestBase {
             mainPage.openMainPage();
         });
         step("Verify promo title contains the expected text", () -> {
-            mainPage.verifyPromoTitleText(testData.mainPageTitle);
+            mainPage.verifyPromoTitleText(config.getMainPageTitle());
         });
     }
 }
